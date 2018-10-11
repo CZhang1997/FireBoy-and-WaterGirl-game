@@ -63,32 +63,40 @@ public class Grass
 //		}
 //		System.out.println ();
 //		}
-
+	
 		try
 		{
 			URL url = getClass().getResource("tile_grass_1.jpg");
-			URL url2 = getClass().getResource("Frosting_Forest_background.png");
 			grass = ImageIO.read(url);
+			System.out.println("grass found");
+			URL url2 = getClass().getResource("Frosting_Forest_background.png");
+			System.out.println("backgroud found");
 			back = ImageIO.read(url2);
 			URL url3 = getClass().getResource("Lava.jpg");
+			System.out.println("Lava found");
 			lava = ImageIO.read(url3);
 			URL url4 = getClass().getResource("Water.jpg");
+			System.out.println("Water found");
 			water = ImageIO.read(url4);
-			URL url5 = getClass().getResource("green.png");
+			URL url5 = getClass().getResource("green.jpg");
+			System.out.println("poison found");
 			poison = ImageIO.read(url5);
 			URL url6 = getClass().getResource("redgem.png");
+			System.out.println("red gem found");
 			rGem = ImageIO.read(url6);
 			URL url7 = getClass().getResource("bluegem.png");
+			System.out.println("blue gem found");
 			bGem = ImageIO.read(url7);
 			URL url8 = getClass().getResource("url.jpg");
+			System.out.println("url found");
 			comp = ImageIO.read(url8);
 			URL url9 = getClass().getResource("wall.jpg");
+			System.out.println("wall found");
 			wall = ImageIO.read(url9);
 
 		}
 		catch(Exception e)
 		{
-	
 			JOptionPane.showMessageDialog(null,"Image was not found !");
 		}
 	}
